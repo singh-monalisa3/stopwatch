@@ -1,4 +1,3 @@
-/* src/Stopwatch.css */
 .stopwatch {
     display: flex;
     flex-direction: column;
@@ -20,7 +19,6 @@
   
   .buttons {
     display: flex;
-    gap: 1rem;
   }
   
   button {
