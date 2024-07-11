@@ -1,4 +1,3 @@
-// src/Stopwatch.js
 import React, { useState, useEffect } from 'react';
 import './Stopwatch.css';
 
@@ -36,7 +35,7 @@ const Stopwatch = () => {
   return (
     <div className="stopwatch">
       <h1>Stopwatch</h1>
-      <div className="time">{formatTime(time)}</div>
+      <div className="time">Time: {formatTime(time)}</div>
       <div className="buttons">
         <button onClick={handleStartStop}>{isActive ? 'Stop' : 'Start'}</button>
         <button onClick={handleReset}>Reset</button>
