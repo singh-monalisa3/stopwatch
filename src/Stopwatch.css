@@ -1,0 +1,31 @@
+/* src/Stopwatch.css */
+.stopwatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .time {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
