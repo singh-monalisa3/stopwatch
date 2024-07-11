@@ -1,6 +1,6 @@
 
 import './App.css';
-import Stopwatch from './stopwatch';
+import Stopwatch from './Stopwatch';
 function App() {
   return (
     <div className="App">

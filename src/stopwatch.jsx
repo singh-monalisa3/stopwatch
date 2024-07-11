@@ -1,21 +1,21 @@
 // src/Stopwatch.js
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Stopwatch.css';
 
 const Stopwatch = () => {
   const [time, setTime] = useState(0);
   const [isActive, setIsActive] = useState(false);
-  const intervalRef = useRef(null);
 
   useEffect(() => {
+    let intervalId;
     if (isActive) {
-      intervalRef.current = setInterval(() => {
+      intervalId = setInterval(() => {
         setTime((prevTime) => prevTime + 1);
       }, 1000);
     } else {
-      clearInterval(intervalRef.current);
+      clearInterval(intervalId);
     }
-    return () => clearInterval(intervalRef.current);
+    return () => clearInterval(intervalId);
   }, [isActive]);
 
   const formatTime = (time) => {
